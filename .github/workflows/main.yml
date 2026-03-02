@@ -1,0 +1,16 @@
+name: Build
+on: [push]
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cordova
+        run: |
+          npm install -g cordova
+          cordova platform add android
+          cordova build android --debug
+      - uses: actions/upload-artifact@v2
+        with:
+          name: app
+          path: platforms/android/app/build/outputs/apk/debug/app-debug.apk
