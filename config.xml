@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <widget id="com.test" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+        <name>hmmodz</name>
+        <content src="https://hmmodz-landing-page.netlify.app/" />
+        <icon src="icon.png" />
+        <preference name="Orientation" value="portrait" />
+    </widget>
